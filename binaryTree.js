@@ -1,39 +1,39 @@
 // Step 1 定义二叉树类
 class BinaryTreeNode {
-  data = '';
-  child = null;
+  _data = '';
+  _child = null;
   constructor(data) {
-    this.data = data;
+    this._data = data;
   }
   getData() {
-    return this.data;
+    return this._data;
   }
   getChild() {
-    return this.child;
+    return this._child;
   }
   getLeftChild() {
-    if (this.child) {
-      return this.child[0];
+    if (this._child) {
+      return this._child[0];
     }
     return null;
   }
   getRightChild() {
-    if (this.child) {
-      return this.child[1];
+    if (this._child) {
+      return this._child[1];
     }
     return null;
   }
   setLeftChild(node) {
     this._init();
-    this.child[0] = node;
+    this._child[0] = node;
   }
   setRightChild(node) {
     this._init();
-    this.child[1] = node;
+    this._child[1] = node;
   }
   _init() {
-    if (!this.child) {
-      this.child = [];
+    if (!this._child) {
+      this._child = [];
     }
   }
 }
