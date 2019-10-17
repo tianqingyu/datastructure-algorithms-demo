@@ -39,9 +39,9 @@ class BinaryTreeNode {
 }
 
 // Step 2 初始化
-// A -> [B, C]
-// B -> [D, E]
-// C -> [F, G]
+// A ⊇ (B, C)
+// B ⊇ (D, E)
+// C ⊇ (F, G)
 const nodeA = new BinaryTreeNode('A');
 const nodeB = new BinaryTreeNode('B');
 const nodeC = new BinaryTreeNode('C');
